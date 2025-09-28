@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paco_Fest</title>
+    <!-- Aquí puedes agregar el enlace a una fuente de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            background-image: url('fondo.jpg'); /* Comentario: Cambia esta línea por la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .invitation-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Comentario: Aquí puedes agregar estilos adicionales para otros elementos */
+    </style>
+</head>
+<body>
+    <div class="invitation-container">
+        <h1>¡Estás Invitadx al Paco Fest!</h1>
+        <h2>Fecha: 4 de Octubre de 2025</h2>
+        <h2>Hora: 7:00 PM</h2>
+        <p>Lugar: San Lucas Patoni, Tlalnepantla, Méx.</p>
+        
+        <!-- Comentario: Aquí puedes agregar un botón con un enlace de Google Maps -->
+        <a href="https://goo.gl/maps/VywJgt6dFz6w8S17A" class="button">Ver ubicación</a>
+
+        <!-- Comentario: Aquí puedes agregar un botón para confirmar asistencia -->
+        <a href="confirmar.html" class="button">Confirmar Asistencia</a>
+
+        <!-- Comentario: Si quieres música de fondo, añade la siguiente etiqueta de audio -->
+        <audio controls autoplay loop>
+            <source src="spacecowboy.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+</body>
+</html>
