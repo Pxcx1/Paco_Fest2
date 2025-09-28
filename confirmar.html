@@ -15,7 +15,7 @@
             align-items: center;
             height: 100vh;
             background-color: #f7f7f7;
-            background-image: url('botellas.jpg'); /* Cambia esta línea por la ruta de tu imagen de fondo */
+            background-image: url('ruta_de_tu_imagen_de_fondo'); /* Cambia esto por tu imagen */
             background-size: cover;
             background-position: center;
         }
@@ -31,6 +31,7 @@
 
         h1 {
             color: #2c3e50;
+            margin-bottom: 20px;
         }
 
         label, input, button {
@@ -57,11 +58,15 @@
 <body>
     <div class="confirm-container">
         <h1>Confirma tu Asistencia</h1>
-        
-        <!-- Formulario sin backend -->
-        <form action="gracias.html" method="GET">
+
+        <!-- FORMULARIO CON FORMSPREE -->
+        <form action="https://formspree.io/f/xzzjdopb" method="POST">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
+            
+            <!-- Esto redirige a gracias.html después de enviar -->
+            <input type="hidden" name="_redirect" value="gracias.html">
+            
             <button type="submit">Confirmar</button>
         </form>
         
